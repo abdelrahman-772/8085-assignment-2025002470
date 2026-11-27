@@ -1,0 +1,10 @@
+;NAME:Abdelrahman Mohamed Ahmed
+;ID : 2025002470 
+;Section :3
+;Q2 : 1's and 2's complement 
+LDA 2500H
+CMA
+STA 2501H
+INR A 
+STA 2502H
+HLT

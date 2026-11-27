@@ -1,0 +1,23 @@
+;NAME : Abdelrahman Mohamed Ahmed 
+; ID : 2025002470
+; Section : 3
+; Q3 : count Even and Odd 
+LDA 2500H 
+MOV C,A 
+LXI H,2501H
+MVI D,00H
+MVI E,00H
+LOOP: MOV A,M
+ANI 01H
+JNZ ODD
+INR D
+JMP NEXT
+ODD: INR E
+NEXT: INX H
+DCR C
+JNZ LOOP
+MOV A,D
+STA 2600H
+MOV A,E
+STA 2601H
+HLT
